@@ -3,13 +3,13 @@
 The original file 'Turku.txt' was tagged by Stanford CoreNLP to Part of Speech, which gave out 'Turku-tagged.txt'
 
 #### To extract terms from a tagged file, run the following command in the terminal:
->python3 Main.py path_to_/Turku-tagged.txt ligui_filter L freq_threshold C-Value_threshld
+>python3 Main.py path_to_/Turku-tagged.txt ligui_filter max_len freq_threshold C_Value_threshld
 
 #### Parameters in the above command:
 - ligui_filter: the linguistic filter, can be Noun or AdjNoun or AdjPrepNoun
-- L: the expected maximum length of a term
+- max_len: the expected maximum length of a term
 - freq_threshold: the frequency threshold 
-- C-Value_threshld: the C-value threshold
+- C_Value_threshld: the C-value threshold
 
 The program will print out terms with the top-10 C-value.
 
